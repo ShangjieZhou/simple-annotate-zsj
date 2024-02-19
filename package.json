@@ -1,9 +1,13 @@
 {
   "name": "simple-annotate-zsj",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple image annotator",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShangjieZhou/simple-annotate-zsj"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-lib": "rollup -c"
