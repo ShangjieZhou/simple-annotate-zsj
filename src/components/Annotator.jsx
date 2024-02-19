@@ -179,7 +179,7 @@ export const Annotator = ({
             width: width,
             height: height,
           }}
-          alt="Background"
+          alt="Please provide an image src"
         />
         <Svg ref={drawboard} viewBox={`0 0 ${width} ${height}`}>
           {Array(lineCount)
@@ -232,11 +232,11 @@ Annotator.defaultProps = {
   maxZoomInFactor: 5,
   themeColor: "#ff2da4",
   contrastColor: "#a60050",
-  componentWidth: "100%",
+  componentWidth: "400px",
   componentHeight: "400px",
   dotSize: 8,
   lineWidth: 3,
   fontSize: "0.8rem",
   imgSrc:
-    "https://img1.baidu.com/it/u=904793130,704474900&fm=253&fmt=auto&app=138&f=JPG?w=800&h=500",
+    "https://static.vecteezy.com/system/resources/previews/014/296/503/original/xray-new-chest-scan-icon-cartoon-radiology-doctor-vector.jpg",
 };
