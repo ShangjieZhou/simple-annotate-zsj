@@ -88,8 +88,9 @@ export const Annotator = ({
   const [lineCount, setLineCount] = useState(0);
 
   useEffect(() => {
-    window.addEventListener("resize", () => resizeEveything());
-    return window.removeEventListener("resize", getLocalDimensions);
+    const handleResize = () => resizeEveything();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useLayoutEffect(() => {
